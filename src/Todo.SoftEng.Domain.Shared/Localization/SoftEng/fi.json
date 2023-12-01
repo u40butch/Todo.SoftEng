@@ -3,6 +3,19 @@
   "texts": {
     "Menu:Home": "Koti",
     "Welcome": "Tervetuloa",
-    "LongWelcomeMessage": "Tervetuloa sovellukseen. Tämä on ABP-kehykseen perustuva käynnistysprojekti. Lisätietoja on osoitteessa abp.io."
+    "LongWelcomeMessage": "Tervetuloa sovellukseen. Tämä on ABP-kehykseen perustuva käynnistysprojekti. Lisätietoja on osoitteessa abp.io.",
+    "Permission:Todo": "Todo",
+    "Permission:Create": "Create",
+    "Permission:Update": "Update",
+    "Permission:Delete": "Delete",
+    "Menu:Todo": "MenuTodo",
+    "Todo": "Todo",
+    "TodoTitle": "TodoTitle",
+    "TodoDescription": "TodoDescription",
+    "CreateTodo": "CreateTodo",
+    "EditTodo": "EditTodo",
+    "TodoDeletionConfirmationMessage": "Are you sure to delete the todo {0}?",
+    "SuccessfullyDeleted": "Successfully deleted",
+    "TableFilter": "TableFilter"
   }
 }

@@ -3,6 +3,19 @@
   "texts": {
     "Menu:Home": "Acasă",
     "Welcome": "Bun venit",
-    "LongWelcomeMessage": "Bun venit la aplicaţie. Acesta este un proiect de pornire bazat pe framework-ul ABP. Pentru mai multe informaţii, vizitaţi, visit abp.io."
+    "LongWelcomeMessage": "Bun venit la aplicaţie. Acesta este un proiect de pornire bazat pe framework-ul ABP. Pentru mai multe informaţii, vizitaţi, visit abp.io.",
+    "Permission:Todo": "Todo",
+    "Permission:Create": "Create",
+    "Permission:Update": "Update",
+    "Permission:Delete": "Delete",
+    "Menu:Todo": "MenuTodo",
+    "Todo": "Todo",
+    "TodoTitle": "TodoTitle",
+    "TodoDescription": "TodoDescription",
+    "CreateTodo": "CreateTodo",
+    "EditTodo": "EditTodo",
+    "TodoDeletionConfirmationMessage": "Are you sure to delete the todo {0}?",
+    "SuccessfullyDeleted": "Successfully deleted",
+    "TableFilter": "TableFilter"
   }
 }

@@ -1,4 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using Volo.Abp.AuditLogging.EntityFrameworkCore;
 using Volo.Abp.BackgroundJobs.EntityFrameworkCore;
 using Volo.Abp.Data;
@@ -12,6 +12,8 @@ using Volo.Abp.PermissionManagement.EntityFrameworkCore;
 using Volo.Abp.SettingManagement.EntityFrameworkCore;
 using Volo.Abp.TenantManagement;
 using Volo.Abp.TenantManagement.EntityFrameworkCore;
+using Todo.SoftEng.Tasks;
+using Volo.Abp.EntityFrameworkCore.Modeling;
 
 namespace Todo.SoftEng.EntityFrameworkCore;
 
@@ -52,6 +54,7 @@ public class SoftEngDbContext :
     public DbSet<TenantConnectionString> TenantConnectionStrings { get; set; }
 
     #endregion
+    public DbSet<Tasks.Todo> Todos { get; set; }
 
     public SoftEngDbContext(DbContextOptions<SoftEngDbContext> options)
         : base(options)
@@ -82,5 +85,15 @@ public class SoftEngDbContext :
         //    b.ConfigureByConvention(); //auto configure for the base class props
         //    //...
         //});
+
+
+        builder.Entity<Tasks.Todo>(b =>
+        {
+            b.ToTable(SoftEngConsts.DbTablePrefix + "Todos", SoftEngConsts.DbSchema);
+            b.ConfigureByConvention(); 
+            
+
+            /* Configure more properties here */
+        });
     }
 }

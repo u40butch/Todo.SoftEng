@@ -3,6 +3,19 @@
   "texts": {
     "Menu:Home": "Home",
     "Welcome": "Willkommen",
-    "LongWelcomeMessage": "Willkommen bei der Anwendung. Dies ist ein Startup-Projekt, das auf dem ABP-Framework basiert. Weitere Informationen finden Sie unter abp.io."
+    "LongWelcomeMessage": "Willkommen bei der Anwendung. Dies ist ein Startup-Projekt, das auf dem ABP-Framework basiert. Weitere Informationen finden Sie unter abp.io.",
+    "Permission:Todo": "Todo",
+    "Permission:Create": "Create",
+    "Permission:Update": "Update",
+    "Permission:Delete": "Delete",
+    "Menu:Todo": "MenuTodo",
+    "Todo": "Todo",
+    "TodoTitle": "TodoTitle",
+    "TodoDescription": "TodoDescription",
+    "CreateTodo": "CreateTodo",
+    "EditTodo": "EditTodo",
+    "TodoDeletionConfirmationMessage": "Are you sure to delete the todo {0}?",
+    "SuccessfullyDeleted": "Successfully deleted",
+    "TableFilter": "TableFilter"
   }
 }

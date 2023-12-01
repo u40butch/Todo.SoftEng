@@ -1,8 +1,21 @@
 {
-    "culture": "hr",
-    "texts": {
-        "Menu:Home": "Početna",
-        "Welcome": "Dobrodošli",
-        "LongWelcomeMessage": "Dobrodošli u aplikaciju. Ovo je startup projekt temeljen na ABP framework-u. Za više informacija posjetite abp.io."
-    }
+  "culture": "hr",
+  "texts": {
+    "Menu:Home": "Početna",
+    "Welcome": "Dobrodošli",
+    "LongWelcomeMessage": "Dobrodošli u aplikaciju. Ovo je startup projekt temeljen na ABP framework-u. Za više informacija posjetite abp.io.",
+    "Permission:Todo": "Todo",
+    "Permission:Create": "Create",
+    "Permission:Update": "Update",
+    "Permission:Delete": "Delete",
+    "Menu:Todo": "MenuTodo",
+    "Todo": "Todo",
+    "TodoTitle": "TodoTitle",
+    "TodoDescription": "TodoDescription",
+    "CreateTodo": "CreateTodo",
+    "EditTodo": "EditTodo",
+    "TodoDeletionConfirmationMessage": "Are you sure to delete the todo {0}?",
+    "SuccessfullyDeleted": "Successfully deleted",
+    "TableFilter": "TableFilter"
+  }
 }

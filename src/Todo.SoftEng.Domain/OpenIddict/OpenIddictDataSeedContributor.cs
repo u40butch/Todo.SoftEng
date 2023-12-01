@@ -189,6 +189,24 @@ public class OpenIddictDataSeedContributor : IDataSeedContributor, ITransientDep
                 clientUri: swaggerRootUrl
             );
         }
+
+        // Maui Client
+        var MauiClientId = configurationSection["AbpMauiApi_Maui:ClientId"];
+        if (!MauiClientId.IsNullOrWhiteSpace())
+        {
+            var MauiRootUrl = configurationSection["AbpMauiApi_Maui:RootUrl"].TrimEnd('/');
+            await CreateApplicationAsync(
+                name: MauiClientId!,
+                type: OpenIddictConstants.ClientTypes.Public,
+                consentType: OpenIddictConstants.ConsentTypes.Implicit,
+                displayName: "MAUI Application",
+                secret: null,
+                grantTypes: new List<string> { OpenIddictConstants.GrantTypes.AuthorizationCode, },
+                scopes: commonScopes,
+                redirectUri: $"{MauiRootUrl}/swagger/oauth2-redirect.html",
+                clientUri: MauiRootUrl
+            );
+        }
     }
 
     private async Task CreateApplicationAsync(
